@@ -6,7 +6,7 @@ import { KontenbaseService } from './kontenbase.service';
   template: `
     <div class="profile-page">
       <div class="button-top">
-        <a class="button">View Profile</a>
+        <a [routerLink]="'/' + user.username" class="button">View Profile</a>
         <button (click)="handleLogout()">Logout</button>
       </div>
       <div class="profile-wrapper">
