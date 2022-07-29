@@ -200,7 +200,6 @@ export class EditProfileComponent implements OnInit {
 
   handleLogout = async () => {
     await this.kontenbase.logout();
-    alert('ok');
     this.router.navigate(['/']);
   };
 }
